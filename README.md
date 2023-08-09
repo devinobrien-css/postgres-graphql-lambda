@@ -92,7 +92,7 @@ Once deployed, visit the link included in the output. This will take you to Apol
 where you can then invoke the `fetchIndividuals` query
 
 ## Environment Variables
-DATABASE_URL: The connection URL to a Postgres database.
+`DATABASE_URL`: The connection URL to a Postgres database.
 
 ## Documentation
 [AWS Serverless](https://docs.aws.amazon.com/serverless-application-model/index.html)
