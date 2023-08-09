@@ -1,10 +1,11 @@
 # Postgres/GraphQL Example in a Monolambda
-This is an AWS Lambda function that demonstrates how to create a GraphQL API using Apollo Server, Nexus, and Prisma. 
-The Lambda function exposes a GraphQL API, connecting to a PostgreSQL database.
+This example demonstrates how to create a GraphQL API using Apollo Server, Nexus, and Prisma. 
+The Lambda function exposes the API and a connection to a PostgreSQL database.
 
 ## Prerequisites
 1. Node.js (12.x or higher)
 2. npm (6.x or higher)
+3. AWS 
 
 ## Directory Structure
 ```
