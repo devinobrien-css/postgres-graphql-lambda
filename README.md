@@ -96,15 +96,22 @@ DATABASE_URL: The connection URL to a Postgres database.
 
 ## Documentation
 [AWS Serverless](https://docs.aws.amazon.com/serverless-application-model/index.html)
+
 [Apollo Server Monolambda](https://www.apollographql.com/docs/apollo-server/deployment/lambda/)
+
 [Prisma Documentation](https://www.prisma.io/docs/concepts/components/prisma-client)
+
 [Nexus Documentation](https://nexusjs.org/docs/api/introduction)
 
 ## Credits
 [AWS](https://aws.amazon.com/)
+
 [Apollo Server](https://www.apollographql.com/)
+
 [Nexus](https://nexusjs.org/)
+
 [Prisma](https://www.prisma.io/)
+
 [Postgres](https://www.postgresql.org/)
 
 ## Contributing
