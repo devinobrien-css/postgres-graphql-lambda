@@ -1,0 +1,32 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
+}
+
+generator nexusPrisma {
+  provider = "nexus-prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:temporary@sampledatabase.cst05k8g370k.us-east-1.rds.amazonaws.com:5432/"
+}
+
+model address {
+  addressid    Int        @id @default(autoincrement())
+  individualid Int
+  type         String     @db.VarChar(255)
+  line1        String     @db.VarChar(255)
+  city         String     @db.VarChar(255)
+  state        String     @db.VarChar(255)
+  zip          String     @db.VarChar(11)
+  individual   individual @relation(fields: [individualid], references: [individualid], onDelete: NoAction, onUpdate: NoAction, map: "individual_address_fk")
+}
+
+model individual {
+  individualid Int       @id @default(autoincrement())
+  firstname    String?   @db.VarChar(255)
+  lastname     String?   @db.VarChar(255)
+  email        String?   @db.VarChar(255)
+  address      address[]
+}
