@@ -1,8 +1,3 @@
-/*
-
-INITIALIZES A POSTGRES DATABASE INSTANCE
-
-*/
 
 CREATE TABLE Individual (
   individualId SERIAL IDENTITY PRIMARY KEY ,
@@ -25,4 +20,8 @@ INSERT INTO Individual (individualId, firstName, lastName, email)
 VALUES 
 (1, 'John','Sanders','jsanders@gmail.com'),
 (2, 'Paul','McKells','pMcKells@gmail.com'),
-(3,'Nick','Sentorinni','nSentorinni@icloud.com')
+(3,'Nick','Sentorinni','nSentorinni@icloud.com');
+
+INSERT INTO Address (individualId, type, line1, city, state, zip)
+VALUES
+(1, 'Physical', '14 Wyant St.','Stratford','CT','06615');
