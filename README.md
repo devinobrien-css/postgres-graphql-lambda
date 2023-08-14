@@ -5,7 +5,7 @@ The API exposes a connection to a PostgreSQL database.
 ## Prerequisites
 1. Node.js (12.x or higher)
 2. npm (6.x or higher)
-3. AWS 
+3. AWS Console/CLI
 
 ## Directory Structure
 ```
