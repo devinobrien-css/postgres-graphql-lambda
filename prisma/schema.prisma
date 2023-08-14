@@ -9,7 +9,7 @@ generator nexusPrisma {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:temporary@sampledatabase.cst05k8g370k.us-east-1.rds.amazonaws.com:5432/"
+  url      = env("DATABASE_URL")
 }
 
 model address {
