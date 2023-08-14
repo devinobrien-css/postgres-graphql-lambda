@@ -49,9 +49,9 @@ generating a Prisma Schema, and deploying the lambda
 
 ### 1. Clone the repository & Install dependencies
 ```
-  git clone https://github.com/devinobrien-css/pg-graphql-example.git
+  git clone https://github.com/devinobrien-css/postgres-graphql-lambda.git
 
-  cd pg-graphql-example
+  cd postgres-graphql-lambda
 
   npm i
 ```
